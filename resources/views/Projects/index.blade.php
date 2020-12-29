@@ -21,13 +21,15 @@
 
     <table class="table table-bordered table-responsive-lg">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Introduction</th>
-            <th>Location</th>
-            <th>Cost</th>
-            <th>Date Created</th>
-            <th width="280px">Action</th>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Comentarios</th>
+            <th>Lugar</th>
+            <th>Costo</th>
+            <th>Cantidad</th>
+            <th>Total Precio</th>
+            <th>Fecha de Actualizacion</th>
+            <th width="280px">Tarea</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
@@ -36,6 +38,8 @@
                 <td>{{ $project->introduction }}</td>
                 <td>{{ $project->location }}</td>
                 <td>{{ $project->cost }}</td>
+                <td>{{ $project->cant }}</td>
+                <td>{{ ($project->cant)*($project->cost) }}</td>
                 <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">

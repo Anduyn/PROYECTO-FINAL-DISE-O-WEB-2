@@ -16,31 +16,37 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
+                <strong>Nombre:</strong>
                 {{ $project->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Introduction:</strong>
+                <strong>Comentarios:</strong>
                 {{ $project->introduction }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Location:</strong>
+                <strong>Lugar:</strong>
                 {{ $project->location }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Cost:</strong>
+                <strong>Costo:</strong>
                 {{ $project->cost }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Date Created:</strong>
+                <strong>Cantidad:</strong>
+                {{ $project->cant }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Fecha de Actualizacion:</strong>
                 {{ date_format($project->created_at, 'jS M Y') }}
             </div>
         </div>

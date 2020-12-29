@@ -13,7 +13,8 @@ class Project extends Model
     public $timestamps = true;
 
     protected $casts = [
-        'cost' => 'float'
+        'cost' => 'float',
+        'cant' => 'float'
     ];
 
     protected $fillable = [
@@ -21,6 +22,7 @@ class Project extends Model
         'introduction',
         'created_at',
         'location',
-        'cost'
+        'cost',
+        'cant'
     ];
 }

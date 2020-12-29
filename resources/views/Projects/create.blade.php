@@ -14,7 +14,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <strong>Whoops!</strong> Encontramos un error en los campos.<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -28,27 +28,33 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
+                    <strong>Nombre:</strong>
                     <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
+                    <strong>Comentarios:</strong>
                     <textarea class="form-control" style="height:50px" name="introduction"
                         placeholder="Introduction"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
+                    <strong>Lugar:</strong>
                     <input type="text" name="location" class="form-control" placeholder="Location">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Cost:</strong>
-                    <input type="number" name="cost" class="form-control" placeholder="Cost">
+                    <strong>Costo:</strong>
+                    <input type="number" name="cost" class="form-control" step="any" placeholder="Cost (Bs)">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Cantidad:</strong>
+                    <input type="number" name="cant" class="form-control" placeholder="Cant">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

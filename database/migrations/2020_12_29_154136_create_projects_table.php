@@ -19,6 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string('introduction', 500)->nullble();
             $table->string('location',255)->nullble();
             $table->decimal('cost',22)->nullble()->default(0.00);
+            $table->decimal ('cant')->nullble();
             $table->timestamps();
         });
     }

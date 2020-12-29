@@ -43,7 +43,8 @@ class ProjectController extends Controller
             'name' => 'required',
             'introduction' => 'required',
             'location' => 'required',
-            'cost' => 'required'
+            'cost' => 'required',
+            'cant' => 'required'
         ]);
 
         Project::create($request->all());
@@ -88,7 +89,8 @@ class ProjectController extends Controller
             'name' => 'required',
             'introduction' => 'required',
             'location' => 'required',
-            'cost' => 'required'
+            'cost' => 'required',
+            'cant' => 'required'
         ]);
         $project->update($request->all());
 
